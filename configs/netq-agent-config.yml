@@ -1,0 +1,43 @@
+
+# NVIDIA NetQ Agent Configuration
+# Educational configuration example only.
+# Not an official or deployable NVIDIA NetQ agent configuration.
+
+lab:
+  name: us-west-ai-pod01
+  environment: educational-simulation
+  platform: NVIDIA NetQ-inspired Network Lab
+
+network:
+  architecture: three-tier-clos
+  topology: super-spine-spine-leaf
+  monitoring_enabled: true
+
+collection:
+  telemetry_interval_seconds: 30
+
+  collect:
+    - device_status
+    - interface_counters
+    - link_utilization
+    - temperature
+    - buffer_utilization
+    - packet_drop_rate
+
+monitoring:
+  health_check_enabled: true
+  event_monitoring_enabled: true
+  alert_management_enabled: true
+
+security:
+  credentials_in_repository: false
+  authentication_required: true
+
+logging:
+  enabled: true
+  log_level: INFO
+
+notes:
+  - "Educational sample configuration."
+  - "Use official NVIDIA documentation for actual NetQ agent deployment."
+  - "No real network devices are configured by this file."
