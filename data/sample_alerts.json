@@ -1,0 +1,29 @@
+
+{
+  "project": "NVIDIA NetQ Network Monitoring Lab",
+  "source": "simulated educational sample",
+
+  "alerts": [
+    {
+      "id": "ALT-001",
+      "severity": "critical",
+      "node": "leaf-02",
+      "title": "Packet Drops Above Critical Threshold",
+      "suggested_action": "Inspect interface counters and investigate the congestion path in the lab."
+    },
+    {
+      "id": "ALT-002",
+      "severity": "warning",
+      "node": "leaf-02",
+      "title": "High Link Utilization",
+      "suggested_action": "Review traffic distribution and available network capacity."
+    },
+    {
+      "id": "ALT-003",
+      "severity": "warning",
+      "node": "leaf-02",
+      "title": "Elevated Buffer Utilization",
+      "suggested_action": "Investigate network congestion and queue telemetry."
+    }
+  ]
+}
