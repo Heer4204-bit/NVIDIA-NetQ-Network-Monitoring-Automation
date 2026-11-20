@@ -64,9 +64,11 @@ Technology| Purpose
 
 Explore the project dashboard and its network monitoring interface:
 
-# "🌐 View Live Project" (https://heer4204-bit.github.io/NVIDIA-NetQ-Network-Monitoring-Automation/)
+# 🌐 View Live Project
+https://heer4204-bit.github.io/NVIDIA-NetQ-Network-Monitoring-Automation/
 
-# "📂 View GitHub Repository" (https://github.com/Heer4204-bit/NVIDIA-NetQ-Network-Monitoring-Automation)
+# 📂 View GitHub Repository
+https://github.com/Heer4204-bit/NVIDIA-NetQ-Network-Monitoring-Automation
 
 # ⚠️ Disclaimer
 This repository is an independent educational project inspired by NVIDIA NetQ concepts. Simulated telemetry and sample network data are clearly identified. It does not claim a live NVIDIA NetQ deployment or official NVIDIA integration unless actually configured and verified.
