@@ -1,0 +1,50 @@
+
+# NVIDIA NetQ-Inspired Monitoring Rules
+# Thresholds for simulated network telemetry.
+
+monitoring:
+  enabled: true
+  check_interval_seconds: 30
+
+thresholds:
+
+  temperature_celsius:
+    warning: 75
+    critical: 85
+
+  link_utilization_percent:
+    warning: 80
+    critical: 95
+
+  buffer_utilization_percent:
+    warning: 70
+    critical: 90
+
+  packet_drop_rate_percent:
+    warning: 0.01
+    critical: 0.1
+
+severity_order:
+  - critical
+  - warning
+  - info
+
+health_status:
+  - healthy
+  - warning
+  - critical
+
+alerts:
+  enabled: true
+  notify_on:
+    - warning
+    - critical
+
+reporting:
+  generate_health_report: true
+  generate_event_report: true
+  generate_alert_report: true
+
+notes:
+  - "Values are illustrative lab thresholds."
+  - "Thresholds should be tuned for the actual network environment."
