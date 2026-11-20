@@ -1,0 +1,107 @@
+
+{
+  "project": "NVIDIA NetQ Network Monitoring Lab",
+  "fabric": "us-west-ai-pod01",
+  "architecture": "Three-Tier Clos Network",
+  "data_type": "simulated",
+
+  "nodes": [
+    {
+      "id": "sspine-01",
+      "name": "Super-Spine-01",
+      "role": "super-spine",
+      "status": "healthy"
+    },
+    {
+      "id": "spine-01",
+      "name": "Spine-01",
+      "role": "spine",
+      "status": "healthy"
+    },
+    {
+      "id": "spine-02",
+      "name": "Spine-02",
+      "role": "spine",
+      "status": "healthy"
+    },
+    {
+      "id": "leaf-01",
+      "name": "Leaf-01",
+      "role": "leaf",
+      "status": "healthy"
+    },
+    {
+      "id": "leaf-02",
+      "name": "Leaf-02",
+      "role": "leaf",
+      "status": "warning"
+    },
+    {
+      "id": "leaf-03",
+      "name": "Leaf-03",
+      "role": "leaf",
+      "status": "healthy"
+    },
+    {
+      "id": "leaf-04",
+      "name": "Leaf-04",
+      "role": "leaf",
+      "status": "healthy"
+    },
+    {
+      "id": "gpu-node-01",
+      "name": "GPU-Host-01",
+      "role": "gpu-host",
+      "status": "healthy"
+    },
+    {
+      "id": "gpu-node-02",
+      "name": "GPU-Host-02",
+      "role": "gpu-host",
+      "status": "healthy"
+    }
+  ],
+
+  "links": [
+    {
+      "source": "sspine-01",
+      "target": "spine-01",
+      "status": "up"
+    },
+    {
+      "source": "sspine-01",
+      "target": "spine-02",
+      "status": "up"
+    },
+    {
+      "source": "spine-01",
+      "target": "leaf-01",
+      "status": "up"
+    },
+    {
+      "source": "spine-01",
+      "target": "leaf-02",
+      "status": "up"
+    },
+    {
+      "source": "spine-02",
+      "target": "leaf-03",
+      "status": "up"
+    },
+    {
+      "source": "spine-02",
+      "target": "leaf-04",
+      "status": "up"
+    },
+    {
+      "source": "leaf-01",
+      "target": "gpu-node-01",
+      "status": "up"
+    },
+    {
+      "source": "leaf-02",
+      "target": "gpu-node-02",
+      "status": "up"
+    }
+  ]
+}
