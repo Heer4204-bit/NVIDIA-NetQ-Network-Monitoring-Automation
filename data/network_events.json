@@ -1,0 +1,32 @@
+
+{
+  "project": "NVIDIA NetQ Network Monitoring Lab",
+  "source": "simulated educational sample",
+
+  "events": [
+    {
+      "id": "EVT-001",
+      "timestamp": "2026-11-20T09:42:00+05:30",
+      "severity": "critical",
+      "node": "leaf-02",
+      "event_type": "packet_drop",
+      "message": "Sample packet-drop rate crossed the critical threshold."
+    },
+    {
+      "id": "EVT-002",
+      "timestamp": "2026-11-20T09:38:00+05:30",
+      "severity": "warning",
+      "node": "leaf-02",
+      "event_type": "high_utilization",
+      "message": "Sample uplink utilization is above the warning threshold."
+    },
+    {
+      "id": "EVT-003",
+      "timestamp": "2026-11-20T09:30:00+05:30",
+      "severity": "info",
+      "node": "spine-01",
+      "event_type": "telemetry_update",
+      "message": "Periodic telemetry snapshot recorded."
+    }
+  ]
+}
