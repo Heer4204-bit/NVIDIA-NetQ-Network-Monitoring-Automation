@@ -1,0 +1,59 @@
+
+{
+  "project": "NVIDIA NetQ Network Monitoring Lab",
+  "source": "simulated educational sample",
+  "captured_at": "2026-11-20T10:00:00+05:30",
+  "fabric": "us-west-ai-pod01",
+
+  "devices": [
+    {
+      "node": "sspine-01",
+      "temperature_celsius": 42.1,
+      "link_utilization_percent": 54.2,
+      "buffer_utilization_percent": 12.0,
+      "packet_drop_rate_percent": 0.0002
+    },
+    {
+      "node": "spine-01",
+      "temperature_celsius": 48.3,
+      "link_utilization_percent": 72.5,
+      "buffer_utilization_percent": 22.0,
+      "packet_drop_rate_percent": 0.0004
+    },
+    {
+      "node": "spine-02",
+      "temperature_celsius": 47.8,
+      "link_utilization_percent": 69.1,
+      "buffer_utilization_percent": 20.5,
+      "packet_drop_rate_percent": 0.0003
+    },
+    {
+      "node": "leaf-01",
+      "temperature_celsius": 46.2,
+      "link_utilization_percent": 68.4,
+      "buffer_utilization_percent": 18.5,
+      "packet_drop_rate_percent": 0.0002
+    },
+    {
+      "node": "leaf-02",
+      "temperature_celsius": 77.0,
+      "link_utilization_percent": 84.0,
+      "buffer_utilization_percent": 73.0,
+      "packet_drop_rate_percent": 0.015
+    },
+    {
+      "node": "leaf-03",
+      "temperature_celsius": 44.5,
+      "link_utilization_percent": 61.0,
+      "buffer_utilization_percent": 17.0,
+      "packet_drop_rate_percent": 0.0001
+    },
+    {
+      "node": "leaf-04",
+      "temperature_celsius": 45.0,
+      "link_utilization_percent": 63.0,
+      "buffer_utilization_percent": 19.0,
+      "packet_drop_rate_percent": 0.0001
+    }
+  ]
+}
